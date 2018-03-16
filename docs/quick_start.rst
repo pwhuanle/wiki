@@ -11,7 +11,7 @@ Download and build
 
 .. code-block:: json
 
-    > git clone https://github.com/tronprotocol/java-tron.git
+    > git clone -b master https://github.com/tronprotocol/java-tron.git
     > cd java-tron
     > gradle build
 
@@ -19,7 +19,7 @@ Download and build
 
 .. code-block:: json
 
-    > git clone https://github.com/tronprotocol/java-tron.git
+    > git clone -b master https://github.com/tronprotocol/java-tron.git
     > cd java-tron
     > ./gradlew clean shadowJar
     > java -jar java-tron/build/libs/java-tron.jar
