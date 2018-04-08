@@ -1,20 +1,20 @@
 ========================
-Tron Protocol
+Tron协议
 ========================
 
 .. toctree::
     :hidden:
 
-    introduction
-    quick_start
-    running_a_full_node
-    running_a_delegate
+    整体介绍
+    快速入门
+    运行全节点
+    运行见证节点
     start_private_blockchain
-    account_management
+    账户管理
     tronix
-    the_tron_network
-    validated_witness_packaging
-    asset_issue_and_trade
+    TRON网络
+    见证节点打包
+    资产发布与交易
 
 TRON
 --------------

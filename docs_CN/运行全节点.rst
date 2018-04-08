@@ -1,0 +1,21 @@
+===========
+运行全节点
+===========
+
+.. contents:: 目录
+  :depth: 1
+  :local:
+
+* 从终端创建
+
+.. code-block:: shell
+
+       > cd java-tron
+       > ./gradlew build
+
+* 使用可执行文件JAE
+
+.. code-block:: shell
+
+       > cd build/libs
+       > java -jar java-tron.jar

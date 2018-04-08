@@ -1,0 +1,70 @@
+===========
+运行见证节点
+===========
+
+.. contents:: 目录
+  :depth: 1
+  :local:
+
+以下我们会介绍如何通过TRON区块链浏览器申请成为见证节点。
+
+**步骤**
+
+1，在TRON区块链浏览器中注册账号。
+
+* 必须注册账号才能使用TRON区块链浏览器，请访问网站：
+
+  http://git.razko.nl/wallet-web/#/login
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/Register.png
+     :height: 158px
+     :width: 322px
+
+2， 新账户必须存有一定数量的TRX。
+
+* 为测试需要，用户可通过账户管理中的选项申请TRX。一旦申请成功，系统会为您的账户中自动发放TRX。
+
+3，用户也可以联系相关波场的工作人员获取用于测试的TRX。
+
+4，可以申请成为见证节点。
+
+* 首先点击按钮 “ Apply_for_delegate” 。
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/apply%20for%20delegate.png
+    :height: 160px
+    :width: 350px
+
+* 请提供您的个人网站地址。个人网站、博客、社交媒体账号地址等均可成为有效地址。
+
+.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/intro/personal%20address.png
+    :height: 160px
+    :width: 350px
+
+5，获得投票数最高的前21各节点会被选中。节点状态每天会更新一次。
+
+* 从终端创建
+
+.. code-block:: shell
+
+    ./gradlew run -Pwitness=true
+
+* 使用可执行文件JAE
+
+.. code-block:: shell
+
+    cd build/libs
+
+    java -jar java-tron.jar --witness true
+
+* IntelliJ IDEA
+
+打开设置选项：
+
+项目的 arguments 选项, fill in --witness:
+
+再次运行全节点::main()。
+
+
+
+
+

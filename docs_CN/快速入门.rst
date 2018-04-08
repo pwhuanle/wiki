@@ -1,0 +1,101 @@
+===========
+快速入门
+===========
+
+.. contents:: 目录
+  :depth: 1
+  :local:
+
+
+**当前测试网p2p版本：32（resources/config.conf:node.p2p.verson = 32）**
+
+**1，从Github克隆下载JAVA-TRON远端仓库**
+
+* 在Github上访问JAVA-TRON仓库
+
+  地址： https://github.com/tronprotocol/java-tron
+
+* 获取源码。我们使用git工具来获取源码。通过以下方式克隆仓库：
+
+.. code-block:: shell
+
+    git clone https://github.com/tronprotocol/java-tron.git
+
+* 命令行中使用Git命令。请先在电脑上下载、安装并配置Git。 请查看链接 `set up git <https://help.github.com/articles/set-up-git/>`_ and `fork a repo <https://help.github.com/articles/fork-a-repo/>`_.
+
+* 如果不熟悉使用Git命令，请下载并打开 `the project as a zip <https://github.com/tronprotocol/java-tron/archive/develop.zip>`_。
+
+* Mac用户，请下载 `Github for Mac <https://desktop.github.com/>`_ 然后 `fork and clone our repository <https://guides.github.com/activities/forking/>`_。
+
+**2，安装dependencies**
+
+* 系统必须安装JDK 1.8。
+
+* 对于Linux Ubuntu系统(比如：Ubuntu 16.04.4 LTS)，请务必下载 `Oracle JDK 8 <https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04>`_ (不是 Open JDK 8)。
+
+**3，下载并安装IntelliJ IDEA**
+
+* 下载IDEA，开始运行项目。
+
+* 继续操作直到顺利进入IntelliJ IDEA。
+
+**4，通过IDEA运行JAVA-TRON**
+
+* 选择'File' 进入已经克隆并下载完成的JAVA-TRON git项目目录。
+
+    ``File`` -> ``New`` -> ``Project from existing sources...``;
+
+* 标注build.gradle然后选择'OK'。
+    
+    ``java-tron/build.gradle``;
+
+* 查看选项"Use auto-import".
+
+* 选择按钮"Use gradle wrapper task configuration"。
+
+* 确保"Gradle JVM"与JDK 1.8配置匹配。
+
+* 点击"OK"开始运行项目。
+
+* IDEA开始运行项目。
+
+**5，贡献**
+
+我们热烈欢迎参与者对于社区以及TRON项目的贡献。 相关信息请查看 `CONTRIBUTING.md <https://github.com/tronprotocol/java-tron/blob/develop/CONTRIBUTING.md>`_。
+
+**6，服务节点**
+
++----------------+-----------------+---------------------+
+| IP             | Locatio        | Description         |
++================+=================+=====================+
+| 47.254.16.55   | Silicon Valley  | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.254.18.49   | Silicon Valley  | Witness Node        |
++----------------+-----------------+---------------------+
+| 18.188.111.53  | Ohio            | Witness Node        |
++----------------+-----------------+---------------------+
+| 54.219.41.56   | California      | Witness Node        |
++----------------+-----------------+---------------------+
+| 35.169.113.187 | Virginia        | Witness Node        |
++----------------+-----------------+---------------------+
+| 34.214.241.188 | Oregon          | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.254.146.147 | Frankfurt       | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.254.144.25  | Frankfurt       | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.91.246.252  | Hongkong        | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.91.216.69   | Hongkong        | Witness Node        |
++----------------+-----------------+---------------------+
+| 39.106.220.120 | Beijing         | Witness Node        |
++----------------+-----------------+---------------------+
+| 47.95.14.107   | Beijing         | Blockchain Explorer |
++----------------+-----------------+---------------------+
+
+**7，相关链接**
+
+* TRON网址: https://tron.network/
+* GitHub: https://github.com/tronprotocol/java-tron/
+* Telegram社群: https://t.me/tronnetworkEN/
+* Slack工作室: https://tronfoundation.slack.com/
