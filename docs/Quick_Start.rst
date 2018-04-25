@@ -137,12 +137,34 @@ To run TRON on more than one node, you need to specify several seed nodes ``IPs 
 
 Running a Public Testnet
 ---------------------------------------------------------
+* Ensure that the version number is consistent with the version number of the test network. If it is not consistent, Please modify the node.p2p.version in the config.conf file, and delete the out-directory directory (if it exists)
 
 **Running a Full Node**
 
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar
+```
+* In the Terminal
+
+```bash
+./gradlew run
+```
+
 It is almost the same as that does in the private testnet, except that the IPs in the ``config.conf`` are officially declared by TRON.
 
-**Running a Witness Node**
+**Running a Super Representative Node**
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf
+Example:
+java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
+
+```
 
 It is almost the same as that does in the private testnet, except that the IPs in the ``config.conf`` are officially declared by TRON.
 
