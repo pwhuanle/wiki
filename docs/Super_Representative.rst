@@ -142,3 +142,37 @@ The following steps serve as an introduction on how to become a Super Representa
 
 8, After approval voting, the top 27 SRs by total approval are selected. The state of active SRs is updated once every maintenance interval (1 day).
 
+9, Running you Super Representative Node
+## Prepare dependencies
+
+* JDK 1.8 (JDK 1.9+ are not supported yet)
+* On Linux Ubuntu system (e.g. Ubuntu 16.04.4 LTS), ensure that the machine has [__Oracle JDK 8__](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04), instead of having __Open JDK 8__ in the system. If you are building the source code by using __Open JDK 8__, you will get [__Build Failed__](https://github.com/tronprotocol/java-tron/issues/337) result.
+
+## Getting the code
+
+* Use Git from the Terminal, see the [Setting up Git](https://help.github.com/articles/set-up-git/) and [Fork a Repo](https://help.github.com/articles/fork-a-repo/) articles.
+** develop branch: the newnest code 
+** master branch: more stable than develop.
+In the shell command, type:
+```bash
+git clone https://github.com/tronprotocol/java-tron.git
+```
+* Build in the Terminal
+
+```bash
+cd java-tron
+./gradlew build
+```
+## Running a Super Representative Node
+
+* Ensure that the version number is consistent with the version number of the test network. If it is not consistent, Please modify the node.p2p.version in the config.conf file, and delete the out-directory directory (if it exists)
+
+* Use the executable JAR(Recommend the way)
+
+```bash
+cd build/libs
+java -jar java-tron.jar -p yourself private key --witness -c yourself config.conf(Example：/data/java-tron/config.conf)
+Example:
+java -jar java-tron.jar -p 650950B193DDDDB35B6E48912DD28F7AB0E7140C1BFDEFD493348F02295BD812 --witness -c /data/java-tron/config.conf
+
+```
