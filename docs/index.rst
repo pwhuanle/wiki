@@ -23,7 +23,7 @@ TRON
 
 *TRON is a blockchain-based open source decentralized content entertainment protocol.*
 
-It is committed to the use of blockchain and distributed storage technology to build a worldwide free content entertainment system that allows each user the freedom to publish, store, have data, and through decentralized form of autonomy,
+It is committed to the use of blockchain and distributed storage technology to build a worldwide free content entertainment system, which is both decentralized and autonomous, that empowers each user with the freedom to publish & store data.
 
-To digital asset distribution, circulation, trading methods to determine the distribution of content, subscribe, push, enable content creators, the formation of decentralized content entertainment ecology.
+The Tron digital asset is a mechanism which provides content creators the methods necessary to determine the distribution of content, to push data to subscribers, resulting in the formation of a decentralized content entertainment ecology.
 
