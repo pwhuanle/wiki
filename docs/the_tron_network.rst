@@ -28,8 +28,3 @@ Setting up a local private testnet
 
 The TRON Network is built on a system of ascending levels of trust. 
 
-
-
-
-
-Super Representative nodes designate their seed nodes in the config file. 

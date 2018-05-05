@@ -12,4 +12,6 @@ Algorithm
 DPoS VS PoS VS PoW
 ------------------
 
-PoW always has its downside like high electric power consuming and low TPS caused by low efficient consensus mechanism. Therefore, it won’t fit the outlook of TRON. PoS outstands to be the undeniable guideline for TORN in order to be a primary blockchain platform for daily scenes. After fully research of impressive ideas in the field of blockchain, we now know for certain that improved DPoS can be TRON’s consensus to meet our future demands.
+PoW (proof of work) has downsides like high electric power consumption. Its inefficient consensus mechanism results in low TPS. Therefore, it won’t fit the outlook of TRON. 
+
+PoS (proof of stake) outstands to be the undeniable guideline for TRON in order to be a primary blockchain platform for everyday use. We have fully researched the most impressive ideas in the field of blockchain and we know for certain that the improved DPoS (distributed proof of stake) can be TRON’s consensus mechanism to meet our future demands.
