@@ -16,7 +16,7 @@ Setting up a local private testnet
 ----------------------------------
 The TRON Network is built on a system of ascending levels of trust. 
 
-The witness node designates seed nodes in its config file. Java-tron learns of those when it runs. The witness node's IP address is not listed, its presence is known only through its connections to the seeds. Seed nodes advertise the blockchain for the witness nodes
+The witness node designates seed nodes in its config file. Java-tron learns of those when it runs. The witness node's IP address is not listed, its presence is known only through its connections to the seeds. Seed nodes advertise the blockchain for the witness nodes.
 
 
 • A *node* is a server that shares information on the p2p blockchain  
@@ -28,7 +28,7 @@ The witness node designates seed nodes in its config file. Java-tron learns of t
 + Super Representative produces blocks  
 + Other SRs validate the block  
 + Full nodes & seed nodes conduct most of the network traffic
-+ New transactions are passed to the witnesses by the Full nodes
++ Nodes pass new transactions to the witnesses
 + Newly created and unvalidated blocks are passed from the SR to the witnesses by the Seed nodes
 + A Solidity Node should have its own Full Node (slave node) to ensure data availability.
 + Seed nodes keep a copy of the blockchain and also pass new transactions to the witness producing the block.  
