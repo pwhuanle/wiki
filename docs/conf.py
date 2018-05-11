@@ -1,5 +1,4 @@
 import sys, os, subprocess
-
 from sphinx.highlighting import lexers
 from pygments.lexers.web import PhpLexer
 
@@ -33,5 +32,4 @@ html_theme = 'guzzle_sphinx_theme'
 html_theme_options = {
     "base_url": "https://tron.network/"
 }
-
 
