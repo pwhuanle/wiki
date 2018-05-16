@@ -97,7 +97,7 @@ Token migration:
 
 - Exchanges: ERC20 TRX tokens will be transferred to TRON. TRON will transfer mainnet tokens to exchanges.
 
-- SR: SR candidate express migration will ensure swift application processing. SRs will have a certain number of initial votes.
+- SR: Express TRX migration channel for Super Representative candidates can ensure unimpeded application for candicacy and a certain amount of initial votes.
 
 4.SR Elections & Rewards
 
@@ -108,7 +108,7 @@ Developer Guide
 
 - Please note that you have to finish development before May 31st (GMT+8).
 - Please note that the mainnet testing will be from June 1 to June 24 (GMT+8) and please participate.
-- Please submit your versions to TRON before June 15th (GMT+8).
+- Please submit your wallet versions to TRON before June 15th (GMT+8).
 
 .. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/TRX_Migration/Gudiance_for_developer的副本.png
     :width: 842
