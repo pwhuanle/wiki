@@ -125,7 +125,11 @@ Wallet-cli supported command list
 RegisterWallet
 --------------
 
-RegisterWallet Password.Register a wallet in local.Generate a pair of ecc keys.Derive a AES Key by password and then use the AES algorithm to encrypt and save the private key.The account address is calculated by the public key sha3-256, and taking the last 20 bytes.All subsequent operations that require the use of a private key must enter the password.
+.. code-block:: shell
+
+    registerwallet password
+
+Registesr a wallet locally. Generates a pair of ecc keys. Derives an AES Key by password and then uses the AES algorithm to encrypt and save the private key. The account address is calculated by the public key sha3-256, and taking the last 20 bytes of the private key. All subsequent operations that require the use of a private key must enter the password.
 
 ImportWallet
 ------------
@@ -191,9 +195,11 @@ help
 How to freeze/unfreeze balance
 ------------------------------
 
-Once balance is frozen, users will received a proportionate amount of shares and bandwidth.
+Once balance is frozen, users will received a proportionate amount of TronPower and bandwidth.
 
-The shares are your votes and bandwidth is used for transactions.
+TronPower is used for voting and bandwidth is used for transactions. 
+
+`1 TRX` = `1,000,000 SUN` = `1 TronPower`.
 
 Their usage and means of calculation will be introduced in following sections.
 
@@ -203,12 +209,10 @@ Their usage and means of calculation will be introduced in following sections.
 
     freezebalance password amount time
 
-    ``amount``: freeze balance in drops, with a minimum of 1_000_000drops, equivalent to 1 TRX.
+    - amount: freeze balance in SUN, with a minimum of 1,000,000 SUN, equivalent to 1 TRX.
+    - time: frozen time in days, the interval between freezing asset and unfreezing is at least 3 days.
 
-
-    ``time``: frozen time, the interval between freezing asset and unfreezing is at least 3 days.
-
-    For example：
+For example：
 
 .. code-block:: shell
 
@@ -217,9 +221,13 @@ Their usage and means of calculation will be introduced in following sections.
 
 Frozen assets will transfer from account Balance to Frozen, which will be reversed once balance unfreezes. Frozen assets cannot be used for transactions.
 
-When in need of more shares or bandwidth, users can freeze more balance to obtain more shares and bandwidth. Date to unfreeze balance will be renewed to 3 days after the latest freeze.
+When in need of more TronPower or bandwidth, users can freeze more balance to obtain more TronPower and bandwidth. Date to unfreeze balance will be renewed to 3 days after the latest freeze.
 
-Assets can be unfrozen after the date to unfreeze.
+TronPower can only be unfrozen when 3 days has passed since the last freeze has occurred. Frozen assets stack, so you can freeze 10 TRX on day 1, 20 TRX on day 2 and 30 TRX on day 3 but you can only unfreeze that 60 TRX on day 6 (3 days after the last freeze).
+
+When unfreezing TronPower you can only unfreeze the entire amount.
+
+If you set the frozen duration to be longer than 3 days then you must wait this duration before unfreezing TronPower.
 
 **Unfreeze command is as follows:：**
 
@@ -230,9 +238,9 @@ Assets can be unfrozen after the date to unfreeze.
 How to vote
 -----------
 
-Voting requires shares, which can be obtained through balance freezing.
+Voting requires TronPower, which can be obtained through balance freezing.
 
-- Calculation of shares: 1 share for 1 frozen TRX.
+- Calculation of TronPower: 1 TronPower for 1 frozen TRX, or 1 TronPower for 1,000,000 SUN.
 - Once unfrozen, previous votes casted will be invalid, which can be prevented by refreezing balance.
 
 **Note:** TRON network only keeps record of the latest votes, meaning that every new vote you make will replace all previous records.
@@ -241,13 +249,18 @@ Example：
 
 .. code-block:: shell
 
-    freezebalance 123455 10_000_000 3// 10 shares for 10 frozen TRX
-
-    votewitness123455 witness1 4 witness2 6//4 votes for witness1 and 6 votes for witness2
-
-    vote witness 123455 witness1 10// 10 votes for witness1
+    // 10 TronPower for 10 frozen TRX (10,000,000 SUN)
+    freezebalance 123455 10000000 3 
+   
+    // 4 votes for witness1 and 6 votes for witness2
+    votewitness 123455 witness1 4 witness2 6 
+    
+    // 10 votes for witness1
+    votewitness 123455 witness1 10 
 
 The final result of the above commands is 10 votes for witness1 and no vote for witness2.
+At first, witness1 will have 4 votes and withness2 will have 6 votes, but since Tron only
+accounts for the latest vote it will overwrite these votes with 10 votes for witness1.
 
 How to calculate bandwidth
 --------------------------
@@ -259,15 +272,17 @@ The bandwidth calculation rule is：
 
     constant * FrozenFunds * days
 
-    Calculation of bandwidth: frozen asset * days * constant.
+    Calculation of bandwidth: constant *  frozen asset in SUN * days.
 
-Suppose 1 TRX is frozen (1,000,000 DROP) for a duration of 3 days, then bandwidth=1,000,00031=3,000,000.
+The `constant` is currently `1`. This may or may not change in the future.
 
-All contracts consume bandwidth, including transfer, migration of asset, voting, freezing balance, etc. Inquiries do not consume bandwidth while for every contract about 100,000 bandwidths is consumed.
+Suppose 1 TRX is frozen (1,000,000 SUN) for a duration of 3 days, then bandwidth=1 \* 1000000 \* 3 = 3000000.
 
-If a new operation exceeds a given amount of time (10s) from the last contract, if does not consume any bandwidth.
+All contracts consume bandwidth, including transfer, migration of asset, voting, freezing balance, etc. Inquiries do not consume bandwidth while for every contract about 100,000 bandwidth is consumed.
 
-Bandwith is not removed for balance freezing. New bandwidths will be accumulated upon acts of balance freezing.
+Bandwidth is only consumed in the event that an operation (transaction / contact) occurs within 10 seconds of the last operation from the same account.
+
+Bandwidth is not reset or removed when you freeze balance. The new balance will accumulate on top of the old balance prior to freezing or unfreezing.
 
 How to withdraw block producing reward
 ---------------------------------------
@@ -284,9 +299,7 @@ How to create TRX
     With enough trx, you can issue assets, participate in asset, apply for witnesses, and more.
 
 
-
 How to create witness
 ---------------------
 
-It takes 100,000 TRX to become establish a witness account. These TRX will be burnt immediately.
-
+It takes 100,000 TRX to establish a witness account. These TRX will be burnt immediately.
