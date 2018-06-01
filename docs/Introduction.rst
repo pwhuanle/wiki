@@ -12,12 +12,12 @@ What is TRON?
 Architecture
 ~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Architecture的副本.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/docs/img/Architecture的副本.png
     :width: 842px
     :height: 462px
     :align: center
 
-Tron adopts a 3-layer architecture comprised of storage layer, core layer and application layer.
+Tron adopts a 3-layer architecture comprised of a storage-, core- and application layer.
 
 - Storage Layer
 
@@ -44,11 +44,11 @@ Consensus
 
 - Improved Consensus Mechanism based on DPOS
 
-High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is highly inconsistent with Tron’s values and footing. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of Tron consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechianism to meet up with our demands, thereby coming up with the Tron consensus.
+High energy consumption, low efficiency and low TPS are always an issue with POW consensus, which is highly inconsistent with Tron’s values and footing. Under the guidance of our architectural philosophy, we have chosen to adopt the POS mechanism as the basis of Tron consensus. Having gained knowledge on constructive ideas in the blockchain community through research, we made improvements to the DPOS mechanism to meet up with our demands, thereby coming up with the Tron consensus.
 
 - Basic Rules of the Consensus Mechanism
 
-    - Coin holders are to vote for nodes in accordance with their holding of coins with a ballot. And nodes are elected to become what are known as witnesses based on the result of the votes and certain other rules, which tries, to its utmost capacity, to strike a balance between speed of block production and the number of witnesses.
+    - Coin holders are to vote for nodes in accordance with their holding of coins with a ballot. Nodes are elected to become what are known as witnesses based on the result of the votes and certain other rules, which tries, to its utmost capacity, to strike a balance between speed of block production and the number of witnesses.
     - Meanwhile, compensation will be made to unelected nodes, voters for both elected nodes and unelected nodes, in order to encourage them to run for future elections.
     - Witnesses will produce valid blocks successively based on specific distribution rules and success to do so results in the highest reward.
     - The vast majority of witnesses are chosen through votes and the rest are selected with an equal chance under a certain algorithm.
@@ -90,9 +90,9 @@ API is mainly used for the development of client terminals. With API support, to
 Smart Contract/ Virtual Machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The smart contract module of TRON allows users to custominze contracts to their own needs.
+The smart contract module of TRON allows users to customize contracts to their own needs.
 
-TRON is home to its own virtual machin, on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
+TRON is home to its own virtual machine on which Smart contract operates, allowing for developers to customize for diverse and complex functions.
 
 Third Party Applications
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,11 +103,11 @@ Third party developers are granted access to Tron’s network for the developmen
 
 - Wallet
 
-With the wallet, users can view their holding of TRX as well as other assets, or initiate or take transactions.
+With the wallet users can view their holding of TRX as well as other assets, initiate or take transactions.
 
 - Blockchain Explorer
 
-Blockchain explorer is used for the viewing of block records, list of nodes, node deploymeng and real-time operation of Tron.
+Blockchain explorer is used for the viewing of block records, a list of nodes, node deployment and more information on the real-time operation of Tron.
 
 ERC20 Token Migration
 ~~~~~~~~~~~~~~~~~~~~~
@@ -331,7 +331,7 @@ Please take a moment to check that your bug report or improvement proposal doesn
 Contributing to Crowdin
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/crowdin-logo-2.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/crowdin-logo-2.png
     :width: 200px
     :height: 200px
     :align: left
