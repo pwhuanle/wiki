@@ -12,7 +12,7 @@ What is TRON?
 Architecture
 ~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/docs/img/Architecture的副本.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/docs/img/Architecture的副本.png
     :width: 842px
     :height: 462px
     :align: center
@@ -331,7 +331,7 @@ Please take a moment to check that your bug report or improvement proposal doesn
 Contributing to Crowdin
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/ybhgenius/wiki/master/images/crowdin-logo-2.png
+.. image:: https://raw.githubusercontent.com/tronprotocol/wiki/master/images/crowdin-logo-2.png
     :width: 200px
     :height: 200px
     :align: left
