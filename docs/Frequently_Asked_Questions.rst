@@ -20,11 +20,11 @@ A: There is no default interface with java-tron. There are several ways to check
 Questions on the Super Node in private networks
 -----------------------------------------------
 
-1. When deploying a private network environment, what’s the relationship between Super Node and Full node? Should I deploy Super Node prior to FullNode?
+1. When deploying a private network environment, what’s the relationship between Super Node and Full node? Should I deploy Super Node prior to FullNode? A: On a private deployment, you will need at least one Super Node, no minimum requirements for FullNode.
 
-2. As the Super Node is selected through user voting, in a private network, do I need to submit application materials to TRON to be approved as a Super Node?
+2. As the Super Node is selected through user voting, in a private network, do I need to submit application materials to TRON to be approved as a Super Node? A: You don’ t need to submit material to TRON foundation.
 
-3. Running in private environment, why is data synchronized and the journal continuously updated to all other nodes? What, then, is the difference between a private and a public environment?
+3. Running in private environment, why is data synchronized and the journal continuously updated to all other nodes? What, then, is the difference between a private and a public environment?. 
 
 Questions on operation in public networks
 -----------------------------------------
