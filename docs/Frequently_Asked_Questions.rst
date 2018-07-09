@@ -10,7 +10,7 @@ Questions on the FullNode in private networks
 ----------------------------------------------
 
 1. When replacing genesis.block.witnesses under config.conf with the address string given upon registration on https://trxscan.org/, do I need to delete other addresses? And do I need to delete the fields of url and voteCount?
-A: There is no need to delete. However, those address will be part of your network too, and useless if you don’ t have their private key.Att: Zion, Sun and Blackhole Accounts can not be deleted from genesis block config file, however you can change their addresses.
+A: There is no need to delete. However, those address will be part of your network too, and useless if you don’ t have their private key. Att: Zion, Sun and Blackhole Accounts can not be deleted from genesis block config file, however you can change their addresses.
 
 2. After seed.node ip.list has been replaced with the ip address of my own public network and the initiation command java -jar java-tron.jar is given, how can I test if the deployment is successful? For instance, are there testing interfaces or commands such as the redis command (sending PING to server and be returned with PONG) for successful deployment?
 A: There is no default interface with java-tron. There are several ways to check if you have a successful deployment, as once your server is running you can send gRPC commands. First thing you will need to check is if the gRPC port is open:
